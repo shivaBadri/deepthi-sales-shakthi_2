@@ -1,88 +1,23 @@
+# Deepthi Multi Program Razorpay Registration
 
-# Deepthi Razorpay Verified Registration
+Programs:
+1. Sales Growth Mentorship - ₹5,000
+2. Sales Shakthi - ₹9,999
 
-Production-style flow:
+Flow:
+Program Selection → Individual Form → Razorpay Payment → Backend Verification → Success Page → WhatsApp Confirmation
 
-Form with poster → Razorpay payment ₹2,100 → Backend verifies payment → Lead updates as PAID → Success page → WhatsApp receipt option
+Frontend root for Vercel: frontend
+Backend root for Render: backend
 
-## Important
-
-This is the correct version when you want success page only after real payment verification.
-
-## Folder Structure
-
-```txt
-frontend/   React + Vite website
-backend/    Node + Express + Razorpay API + local JSON database
-```
-
-## Backend Setup
-
-```bash
-cd backend
-npm install
-copy .env.example .env
-npm run dev
-```
-
-Update `backend/.env`:
-
-```env
-PORT=5000
-FRONTEND_URL=http://localhost:5173
-RAZORPAY_KEY_ID=rzp_test_xxxxxxxxx
-RAZORPAY_KEY_SECRET=xxxxxxxxx
-PAYMENT_AMOUNT_INR=2100
-```
-
-Backend health:
-
-```txt
-http://localhost:5000/api/health
-```
-
-## Frontend Setup
-
-```bash
-cd frontend
-npm install
-copy .env.example .env
-npm run dev
-```
-
-Open:
-
-```txt
-http://localhost:5173
-```
-
-## Deployment
-
-Frontend: Vercel  
-Backend: Render / Railway
-
-For Vercel frontend env:
-
-```env
-VITE_API_BASE_URL=https://your-backend-url.onrender.com
-```
-
-For backend env on Render/Railway:
-
-```env
+Backend env:
 PORT=5000
 FRONTEND_URL=https://your-vercel-url.vercel.app
-RAZORPAY_KEY_ID=your_key_id
-RAZORPAY_KEY_SECRET=your_key_secret
-PAYMENT_AMOUNT_INR=2100
-```
+RAZORPAY_KEY_ID=rzp_live_xxxxx
+RAZORPAY_KEY_SECRET=xxxxx
+BRAND_NAME=Deepthi Sales Growth
+WHATSAPP_NUMBER=918801028315
 
-## Note
-
-Local JSON database is used in:
-
-```txt
-backend/src/data/leads.json
-```
-
-For long-term production, replace with MongoDB/Supabase.
+Frontend env:
+VITE_API_BASE_URL=https://your-render-url.onrender.com
+"# Deepthi-Mam-Sales-" 
