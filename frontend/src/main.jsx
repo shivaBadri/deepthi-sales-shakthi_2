@@ -7,18 +7,27 @@ import "./styles.css";
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
 
 const PROGRAMS = {
+  "magical-sales-bootcamp": {
+    id: "magical-sales-bootcamp",
+    name: "21 Magical Sales Online Boot Camp",
+    amountInr: 2100,
+    tagline: "21-day online bootcamp for mindset, skills and sales breakthrough.",
+    badge: "Bootcamp"
+  },
+
   "sales-growth-mentorship": {
     id: "sales-growth-mentorship",
     name: "Sales Growth Mentorship",
     amountInr: 5000,
-    tagline: "Focused mentorship to improve sales confidence, process and conversion.",
+    tagline: "Focused mentorship to improve sales confidence and conversion.",
     badge: "Mentorship"
   },
+
   "sales-shakthi": {
     id: "sales-shakthi",
     name: "Sales Shakthi",
     amountInr: 9999,
-    tagline: "Premium sales transformation program for stronger sales execution.",
+    tagline: "Premium sales transformation program.",
     badge: "Premium Program"
   }
 };
