@@ -9,10 +9,10 @@ const API_BASE_URL =
 const PROGRAMS = {
   "sales-shakthi": {
     id: "sales-shakthi",
-    name: "Sales Shakthi",
+    name: "21 Days Magical Sales",
     amountInr: 2100,
-    tagline: "21 Magical Sales Online Boot Camp",
-    badge: "Sales Shakthi",
+    tagline: "21 Days Magical Sales Online Boot Camp",
+    badge: "21 Days Magical Sales",
   },
 };
 
@@ -48,7 +48,7 @@ Program: ${paidLead.programName}
 Amount Paid: Rs. ${paidLead.amountInr}
 Payment ID: ${paidLead.razorpayPaymentId}
 
-Registration has been automatically confirmed.`;
+Registration for 21 Days Magical Sales has been automatically confirmed.`;
 
     return `https://wa.me/918801028315?text=${encodeURIComponent(msg)}`;
   }, [paidLead]);
@@ -109,7 +109,7 @@ Registration has been automatically confirmed.`;
         key: orderData.key,
         amount: orderData.amount,
         currency: orderData.currency,
-        name: "Sales Shakthi",
+        name: "21 Days Magical Sales",
         description: orderData.program.name,
         order_id: orderData.orderId,
         prefill: {
@@ -181,34 +181,21 @@ Registration has been automatically confirmed.`;
           <div className="success-card">
             <div className="check">✓</div>
             <p className="mini-tag">Payment Verified</p>
-            <h1>Sales Shakthi Registration Successful</h1>
+            <h1>21 Days Magical Sales Registration Successful</h1>
+
             <p className="sub">
               Your payment has been verified and your registration is marked as
               PAID.
             </p>
 
             <div className="lead-card">
-              <p>
-                <strong>Lead ID:</strong> {paidLead.id}
-              </p>
-              <p>
-                <strong>Name:</strong> {paidLead.name}
-              </p>
-              <p>
-                <strong>Mobile:</strong> {paidLead.phone}
-              </p>
-              <p>
-                <strong>Profession:</strong> {paidLead.profession}
-              </p>
-              <p>
-                <strong>Program:</strong> {paidLead.programName}
-              </p>
-              <p>
-                <strong>Amount:</strong> ₹{paidLead.amountInr}
-              </p>
-              <p>
-                <strong>Payment ID:</strong> {paidLead.razorpayPaymentId}
-              </p>
+              <p><strong>Lead ID:</strong> {paidLead.id}</p>
+              <p><strong>Name:</strong> {paidLead.name}</p>
+              <p><strong>Mobile:</strong> {paidLead.phone}</p>
+              <p><strong>Profession:</strong> {paidLead.profession}</p>
+              <p><strong>Program:</strong> {paidLead.programName}</p>
+              <p><strong>Amount:</strong> ₹{paidLead.amountInr}</p>
+              <p><strong>Payment ID:</strong> {paidLead.razorpayPaymentId}</p>
             </div>
 
             <a
@@ -220,13 +207,16 @@ Registration has been automatically confirmed.`;
               Share Confirmation on WhatsApp
             </a>
 
-            <button className="secondary-btn" onClick={() => setPaidLead(null)}>
+            <button
+              className="secondary-btn"
+              onClick={() => setPaidLead(null)}
+            >
               Register Another Person
             </button>
           </div>
 
           <div className="poster-card">
-            <img src={poster} alt="Sales Shakthi program" />
+            <img src={poster} alt="21 Days Magical Sales Program" />
           </div>
         </section>
       </main>
@@ -238,10 +228,12 @@ Registration has been automatically confirmed.`;
       <section className="hero-layout">
         <div className="content-card">
           <p className="mini-tag">Deepthi Sales Program</p>
-          <h1>Sales Shakthi Registration</h1>
+
+          <h1>21 Days Magical Sales Registration</h1>
+
           <p className="sub">
-            Register for Sales Shakthi and complete your payment securely
-            through Razorpay.
+            Register for 21 Days Magical Sales and complete your payment
+            securely through Razorpay.
           </p>
 
           <div className="program-options">
@@ -270,14 +262,16 @@ Registration has been automatically confirmed.`;
           <img
             className="poster-inline"
             src={poster}
-            alt="Sales Shakthi bootcamp"
+            alt="21 Days Magical Sales Boot Camp"
           />
         </div>
 
         <div className="form-card">
           <form onSubmit={submitForm}>
             <p className="mini-tag">{selectedProgram.badge}</p>
+
             <h3>{selectedProgram.name}</h3>
+
             <div className="price-box">
               ₹{selectedProgram.amountInr.toLocaleString("en-IN")}
             </div>
