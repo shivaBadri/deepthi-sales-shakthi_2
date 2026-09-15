@@ -183,7 +183,7 @@ Registration for 11 Days Magical Sales has been automatically confirmed.`;
           <div className="success-card">
             <div className="check">✓</div>
             <p className="mini-tag">Payment Verified</p>
-            <h1>21 Days Magical Sales Registration Successful</h1>
+            <h1>11 Days Magical Sales Registration Successful</h1>
 
             <p className="sub">
               Your payment has been verified and your registration is marked as
@@ -218,7 +218,7 @@ Registration for 11 Days Magical Sales has been automatically confirmed.`;
           </div>
 
           <div className="poster-card">
-            <img src={poster} alt="21 Days Magical Sales Program" />
+            <img src={poster} alt="11 Days Magical Sales Program" />
           </div>
         </section>
       </main>
@@ -231,10 +231,10 @@ Registration for 11 Days Magical Sales has been automatically confirmed.`;
         <div className="content-card">
           <p className="mini-tag">Deepthi Sales Program</p>
 
-          <h1>21 Days Magical Sales Registration</h1>
+          <h1>11 Days Magical Sales Registration</h1>
 
           <p className="sub">
-            Register for 21 Days Magical Sales and complete your payment
+            Register for 11 Days Magical Sales and complete your payment
             securely through Razorpay.
           </p>
 
@@ -264,7 +264,7 @@ Registration for 11 Days Magical Sales has been automatically confirmed.`;
           <img
             className="poster-inline"
             src={poster}
-            alt="21 Days Magical Sales Boot Camp"
+            alt="11 Days Magical Sales Boot Camp"
           />
         </div>
 
