@@ -9,10 +9,12 @@ const API_BASE_URL =
 const PROGRAMS = {
   "sales-shakthi": {
     id: "sales-shakthi",
-    name: "21 Days Magical Sales",
-    amountInr: 2100,
-    tagline: "21 Days Magical Sales Online Boot Camp",
-    badge: "21 Days Magical Sales",
+    name: "11 Days Magical Sales",
+    amountInr: 1999,
+    tagline: "11 Days Magical Sales Online Boot Camp",
+    badge: "11 Days Magical Sales",
+    date: "1st October to 11th October 2026",
+    time: "Morning 6:30 AM to 7:30 AM",
   },
 };
 
@@ -48,7 +50,7 @@ Program: ${paidLead.programName}
 Amount Paid: Rs. ${paidLead.amountInr}
 Payment ID: ${paidLead.razorpayPaymentId}
 
-Registration for 21 Days Magical Sales has been automatically confirmed.`;
+Registration for 11 Days Magical Sales has been automatically confirmed.`;
 
     return `https://wa.me/918801028315?text=${encodeURIComponent(msg)}`;
   }, [paidLead]);
@@ -109,7 +111,7 @@ Registration for 21 Days Magical Sales has been automatically confirmed.`;
         key: orderData.key,
         amount: orderData.amount,
         currency: orderData.currency,
-        name: "21 Days Magical Sales",
+        name: "11 Days Magical Sales",
         description: orderData.program.name,
         order_id: orderData.orderId,
         prefill: {
